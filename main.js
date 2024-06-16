@@ -28,6 +28,7 @@ function main() {
         break;
       case `%`:
         console.log(`Result: ${num1 % num2}`);
+        break;
       default:
         console.log(`Invalid symbol!`);
         break;
