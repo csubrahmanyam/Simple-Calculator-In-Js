@@ -2,13 +2,15 @@
  * Simple Calculator In JavaScript *
  ***********************************/
 
+const readline = require("readline-sync");
+
 function main() {
   console.log(`Simple Calculator (ctrl + c for quit!)`);
   while (true) {
     //Take User Input
-    let num1 = Number(prompt(`Enter first number:`));
-    let symbol = prompt(`Enter symbol(+,-,*,/,%):`);
-    let num2 = Number(prompt(`Enter second number:`));
+    let num1 = Number(readline.question(`Enter first number:`));
+    let symbol = readline.question(`Enter symbol(+,-,*,/,%):`);
+    let num2 = Number(readline.question(`Enter second number:`));
 
     //Calculate According To User's Choice
     switch (symbol) {
